@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(Qt6 REQUIRED COMPONENTS Qml)
+find_dependency(ICU REQUIRED COMPONENTS uc i18n data)
+
+include("${CMAKE_CURRENT_LIST_DIR}/QJSEnginePolyfillsTargets.cmake")
